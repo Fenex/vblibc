@@ -26,10 +26,10 @@ A simple stack.
 All available functions with short describe shown below.
 See [vblibc_stack.h](/Fenex/vblibc/blob/master/src/vblibc_stack.h) for more detail API.
 ```C
-vb_stack_push(stack, value)
-vb_stack_pop(stack)
-vb_stack_destroy(stack)
-vb_stack_deep(stack)
+vb_stack_push(stack, value);
+vb_stack_pop(stack);
+vb_stack_destroy(stack);
+vb_stack_deep(stack);
 ```
 
 ## Run tests
