@@ -18,7 +18,8 @@ vb_list_init ()
 }
 
 static vb_list_item_t *
-list_add (vb_list_t *self, void *data) {
+list_add (vb_list_t *self, void *data)
+{
   vb_list_item_t *item;
 
   item = malloc(sizeof(vb_list_item_t));
