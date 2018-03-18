@@ -1,6 +1,10 @@
 .vscode/
 build/*
 
+# Ignore ceedling files:
+vendor/ceedling/*
+project.yml
+
 # Object files
 *.o
 *.ko
