@@ -9,7 +9,7 @@ You can see tests as examples to know how to use libs.
 A simple singly linked list.
 
 All available functions with short description shown below.
-See [vblibc_list.h](/Fenex/vblibc/blob/master/src/vblibc_list.h) for more details.
+See [vblibc_list.h](/src/vblibc_list.h) for more details.
 ```C
 vb_list_init(); // init new singly linked list
 vb_list_add(stack ,value); // appends new value onto the list
@@ -24,7 +24,7 @@ vb_list_qsort(stack, compare_callback); // sorts the list using callback compare
 A simple stack.
 
 All available functions shown below.
-See [vblibc_stack.h](/Fenex/vblibc/blob/master/src/vblibc_stack.h) for more details.
+See [vblibc_stack.h](/src/vblibc_stack.h) for more details.
 ```C
 vb_stack_push(stack, value);
 vb_stack_pop(stack);
