@@ -262,7 +262,7 @@ test_vb_list_qsort (void)
 // [{int}, {int}, ...] == list
 
 static int touch = 0;
-static void* dispose_callback(const void *data)
+static void* dispose_callback(void *data)
 {
   touch++;
   free(data);

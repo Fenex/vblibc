@@ -56,7 +56,7 @@ vb_list_add (vb_list_t *self, void *data)
 void
 vb_list_clear (
   vb_list_t *self,
-  void *(*dispose_callback)(const void *)
+  void *(*dispose_callback)(void *)
 ) {
   vb_list_item_t *item, *rm;
   assert(self != NULL);
@@ -68,7 +68,7 @@ vb_list_clear (
 void
 vb_list_destroy (
   vb_list_t **self,
-  void *(*dispose_callback)(const void *)
+  void *(*dispose_callback)(void *)
 ) {
   if (*self != NULL) {
     vb_list_clear(*self, dispose_callback);
@@ -115,7 +115,7 @@ void *
 vb_list_remove (
   vb_list_t *self,
   size_t index,
-  void *(*dispose_callback)(const void *)
+  void *(*dispose_callback)(void *)
 ) {
   vb_list_item_t *item;
   void *data;

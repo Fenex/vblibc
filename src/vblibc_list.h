@@ -58,7 +58,7 @@ void *vb_list_add(
  * @param dispose_callback The function will be called to each element
  */
 void vb_list_clear(
-  vb_list_t *self, void* (*dispose_callback)(const void *)
+  vb_list_t *self, void* (*dispose_callback)(void *)
 );
 
 /**
@@ -69,7 +69,7 @@ void vb_list_clear(
  */
 void vb_list_destroy(
   vb_list_t **p_self,
-  void* (*dispose_callback)(const void *)
+  void* (*dispose_callback)(void *)
 );
 
 /**
@@ -95,7 +95,7 @@ void *vb_list_get(
 void *vb_list_remove(
   vb_list_t *self,
   size_t index,
-  void* (*dispose_callback)(const void *)
+  void* (*dispose_callback)(void *)
 );
 
 /**
