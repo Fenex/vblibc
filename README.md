@@ -1,5 +1,5 @@
 # vblibc
-The repository contains two tiny C libraries: 
+The repository contains several tiny C libraries: 
 * vblibc_list.h - simple singly linked list
 * vblibc_stack.h - simple stack
 * vblibc_string.h - functions for work with strings
@@ -34,7 +34,7 @@ vb_stack_deep(stack);
 ```
 
 ## vblibc_string.h
-Functions for work with strings
+Functions for work with strings.
 
 All available functions shown below.
 See [test_string.c](/test/test_string.c) for know how to use.
