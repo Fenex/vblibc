@@ -2,7 +2,7 @@
 #include "vblibc_string.h"
 
 int
-is_string_ends_with (
+vb_string_is_ends_with (
   const char *str,
   const char *tpl
 ) {
@@ -11,7 +11,7 @@ is_string_ends_with (
 
   int str_len = strlen(str);
   int tpl_len = strlen(tpl);
-  if (str_len < tpl_len)
+  if (str_len < tpl_len || tpl_len == 0)
     return 0;
 
   for (; tpl_len >= 0; str_len--, tpl_len--) {
@@ -23,7 +23,7 @@ is_string_ends_with (
 }
 
 int
-is_string_starts_with (
+vb_string_is_starts_with (
   const char *str,
   const char *tpl
 ) {
@@ -33,10 +33,10 @@ is_string_starts_with (
 
   int str_len = strlen(str);
   int tpl_len = strlen(tpl);
-  if (str_len < tpl_len)
+  if (str_len < tpl_len || tpl_len == 0)
     return 0;
   
-  for (p = tpl; p <= tpl; str++, p++) {
+  for (p = tpl; p < tpl + tpl_len; str++, p++) {
     if (*str != *p)
       return 0;
   }

@@ -8,13 +8,13 @@ extern "C" {
 #endif
 
 int
-is_string_ends_with (
+vb_string_is_ends_with (
   const char *str,
   const char *tpl
 );
 
 int
-is_string_starts_with (
+vb_string_is_starts_with (
   const char *str,
   const char *tpl
 );

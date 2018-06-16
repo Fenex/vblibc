@@ -2,6 +2,7 @@
 The repository contains two tiny C libraries: 
 * vblibc_list.h - simple singly linked list
 * vblibc_stack.h - simple stack
+* vblibc_string.h - functions for work with strings
 
 You can see tests as examples to know how to use libs.
 
@@ -30,6 +31,16 @@ vb_stack_push(stack, value);
 vb_stack_pop(stack);
 vb_stack_destroy(stack);
 vb_stack_deep(stack);
+```
+
+## vblibc_string.h
+Functions for work with strings
+
+All available functions shown below.
+See [test_string.c](/test/test_string.c) for know how to use.
+```C
+vb_string_is_starts_with(string_base, search_string); // similar to `String.prototype.startsWith` in JavaScript
+vb_string_is_ends_with(string_base, search_string); // similar to `String.prototype.endsWith` in JavaScript
 ```
 
 ## Run tests
