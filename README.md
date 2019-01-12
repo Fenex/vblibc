@@ -9,6 +9,7 @@ You can see tests as examples to know how to use libs.
 ## vblibc_list.h
 A simple singly linked list.
 
+### Description
 All available functions with short description shown below.
 See [vblibc_list.h](/src/vblibc_list.h) for more details.
 ```C
@@ -19,6 +20,21 @@ vb_list_destroy(stack, dispose_callback); // removes all values from the list an
 vb_list_get(stack, index); // gets value by index
 vb_list_remove(stack, index); // removes value by index
 vb_list_qsort(stack, compare_callback); // sorts the list using callback compare function
+```
+
+### Example
+
+```c
+char *str = "123456\0";
+
+vb_list_t *list = vb_list_init();
+vb_list_add(list, str+1); // adds pointer to '2'
+vb_list_add(list, str+3); // adds pointer to '4'
+
+char *first_element = (char *)vb_list_get(list, 0); // gets first element
+char *second_element = (char *)vb_list_get(list, 1); // gets second element
+
+printf("%c%c", second_element, first_element); // prints "42"
 ```
 
 ## vblibc_stack.h
