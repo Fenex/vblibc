@@ -14,11 +14,11 @@ All available functions with short description shown below.
 See [vblibc_list.h](/src/vblibc_list.h) for more details.
 ```C
 vb_list_init(); // init new singly linked list
-vb_list_add(stack ,value); // appends new value onto the list
-vb_list_clear(stack, dispose_callback); // removes all values from the list
-vb_list_destroy(stack, dispose_callback); // removes all values from the list and destroys the list
+vb_list_add(stack, value); // appends new value onto the list
 vb_list_get(stack, index); // gets value by index
 vb_list_remove(stack, index); // removes value by index
+vb_list_clear(stack, dispose_callback); // removes all values from the list
+vb_list_destroy(stack, dispose_callback); // removes all values from the list and destroys the list
 vb_list_qsort(stack, compare_callback); // sorts the list using callback compare function
 ```
 
