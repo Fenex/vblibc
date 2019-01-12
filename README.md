@@ -34,7 +34,7 @@ vb_list_add(list, str+3); // adds pointer to '4'
 char *first_element = (char *)vb_list_get(list, 0); // gets first element
 char *second_element = (char *)vb_list_get(list, 1); // gets second element
 
-printf("%c%c", second_element, first_element); // prints "42"
+printf("%c%c", *second_element, *first_element); // prints "42"
 ```
 
 ## vblibc_stack.h
