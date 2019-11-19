@@ -1,0 +1,19 @@
+name: C/C++ CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install Ruby
+      uses: actions/setup-ruby@v1
+    - name: Install ceedling
+      run: gem install ceedling
+    - name: Configuring ceedling
+      run: ceedling install .
+    - name: Run tests
+      run: ceedling
