@@ -16,7 +16,7 @@ test_vb_string_is_ends_with ()
   TEST_ASSERT_FALSE(vb_string_is_ends_with(NULL, NULL));
 
   TEST_ASSERT_TRUE(vb_string_is_ends_with("1234", "1234"));
-  TEST_ASSERT_TRUE(vb_string_is_ends_with("1234", "234"));
+  TEST_ASSERT_TRUE(vb_string_is_ends_with("1234", "fd234"));
   TEST_ASSERT_TRUE(vb_string_is_ends_with("1234", "4"));
 }
 
