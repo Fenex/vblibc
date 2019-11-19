@@ -14,6 +14,6 @@ jobs:
     - name: Install ceedling
       run: gem install ceedling
     - name: Configuring ceedling
-      run: ceedling install .
+      run: ceedling new .
     - name: Run tests
       run: ceedling
