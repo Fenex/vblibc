@@ -1,4 +1,6 @@
 # vblibc
+![](https://github.com/Fenex/vblibc/workflows/C%2FC%2B%2B%20CI/badge.svg)
+
 The repository contains several tiny C libraries: 
 * vblibc_list.h - simple singly linked list
 * vblibc_stack.h - simple stack
